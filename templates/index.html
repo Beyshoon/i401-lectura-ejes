@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="2">
+    <meta charset="utf-8">
+
+    <style>
+        body {
+            background-color: #101820;
+            font-family: Arial;
+            color: white;
+            text-align: center;
+        }
+
+        #titulo {
+            color: #00ff99;
+            font-size: 40px;
+        }
+
+        #panel {
+            background-color: #1f2d3d;
+            width: 300px;
+            margin: 40px auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px #00ff99;
+        }
+
+        .dato {
+            background-color: #2f3e50;
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 22px;
+        }
+
+        #estado {
+            color: #00ff99;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo">Panel IoT Personalizado</h1>
+
+    <div id="panel">
+        <h2>Monitor de Sensores</h2>
+
+        <div class="dato">
+            Eje X: {{ ejeX }} cm
+        </div>
+
+        <div class="dato">
+            Eje Y: {{ ejeY }} cm
+        </div>
+
+        <p id="estado">Sistema conectado y actualizando datos</p>
+    </div>
+</body>
+</html>
